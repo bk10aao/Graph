@@ -16,7 +16,7 @@ public class Dijkstra {
 
         for (Object v: g.getVertices()) {
             Vertex vertex = (Vertex)v;
-            if (v != startingVertex)
+            if (vertex != startingVertex)
                 distances.put(vertex.getData(), Integer.MAX_VALUE);
             previous.put(vertex.getData(), new Vertex("Null"));
         }
